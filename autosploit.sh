@@ -1,6 +1,6 @@
 #!bin/bash
 clear
-echo '                         - Start Autosploit -                      ' | lolcat
+echo '                         - Starting Autosploit -                      ' | lolcat
 banner(){
 sleep 0.5s
 echo -n '                                 .'
@@ -20,6 +20,8 @@ banner | lolcat
 echo ''
 toilet -f shadow -F metal 'VAGABOND CYBER'
 sleep 0.4s
+echo 'visit > https://github.com/Kaitogun' | lolcat
+echo ''
 #input pilihan
 inputPilihan(){
 echo '          - Pilih Exploit -  '
