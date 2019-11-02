@@ -1,6 +1,6 @@
 #!bin/bash
 clear
-echo '                         - Start Exploit -                      '
+echo '                         - Start Autosploit -                      '
 sleep 0.5s
 echo -n '                                 .'
 sleep 0.5s
