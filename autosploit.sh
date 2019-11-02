@@ -65,7 +65,7 @@ echo -n 'Masukan nomor pilihan : '
 read nhost
 case $nhost in
 1)
-  host="127.0.01"
+  host="127.0.0.1"
   ;;
 2)
   echo -n 'Masukan Host/Ip : '
