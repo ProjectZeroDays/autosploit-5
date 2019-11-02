@@ -19,21 +19,21 @@ done
 banner | lolcat
 echo ''
 toilet -f shadow -F metal 'VAGABOND CYBER'
-sleep 0.4s
+sleep 0.2s
 echo 'visit > https://github.com/Kaitogun' | lolcat
 echo ''
 #input pilihan
 inputPilihan(){
 echo '          - Pilih Exploit -  '
-sleep 0.7s
+sleep 0.08s
 echo '[1] android/meterpreter/reverse_tcp'
-sleep 0.7s
+sleep 0.08s
 echo '[2] android/meterpreter/reverse_http'
-sleep 0.7s
+sleep 0.08s
 echo '[3] windows/meterpreter/reverse_tcp'
-sleep 0.7s
+sleep 0.08s
 echo '[4] windows/meterpreter/reverse_http'
-sleep 0.7s
+sleep 0.08s
 }
 pilihBackdoor(){
 echo -n 'Masukan Pilihan sesuai nomor : '
@@ -57,20 +57,16 @@ case $nomor in
    ;;
 esac
 }
-inputPilihan | lolcat
-pilihBackdoor | lolcat
-sleep 0.09s
+inputPilihan
+pilihBackdoor
+sleep 0.08s
 #pilihan host/ip
-bannerHost(){
 echo '  -- Pilih Host/Ip --'
-sleep 0.1s
+sleep 0.08s
 echo '  [1] 127.0.0.1'
-sleep 0.09
+sleep 0.08s
 echo '  [2] Masukan sendiri Host/Ip...'
-sleep 0.09
-}
-bannerHost | lolcat
-pilihHost(){
+sleep 0.08s
 echo -n 'Masukan nomor pilihan : '
 read nhost
 case $nhost in
@@ -86,9 +82,7 @@ case $nhost in
   pilihHost
   ;;
 esac
-}
-pilihHost | lolcat
-echo -n 'Masukan Port : ' | lolcat
+echo -n 'Masukan Port : '
 read port
 
 #create file
