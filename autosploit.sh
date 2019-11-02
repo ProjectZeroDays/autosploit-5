@@ -1,6 +1,6 @@
 #!bin/bash
 clear
-echo '                         - Start Autosploit -                      '
+echo '                         - Start Autosploit -                      ' | lolcat
 sleep 0.5s
 echo -n '                                 .'
 sleep 0.5s
@@ -12,23 +12,25 @@ x=1
 while [ $x -le 76 ]
 do
   echo -n "="
-  sleep 0.02
+  sleep 0.02s
   x=$(( $x + 1 ))
 done
 echo ''
 toilet -f shadow -F metal 'VAGABOND CYBER'
-sleep 0.05
+sleep 0.09s
 #input pilihan
+inputPilihan(){
 echo '          - Pilih Exploit -  '
-sleep 0.09
+sleep 0.1s
 echo '[1] android/meterpreter/reverse_tcp'
-sleep 0.09
+sleep 0.1s
 echo '[2] android/meterpreter/reverse_http'
-sleep 0.09
+sleep 0.1s
 echo '[3] windows/meterpreter/reverse_tcp'
-sleep 0.09
+sleep 0.1s
 echo '[4] windows/meterpreter/reverse_http'
-sleep 0.09
+sleep 0.1s
+}
 pilihBackdoor(){
 echo -n 'Masukan Pilihan sesuai nomor : '
 read nomor
@@ -51,8 +53,9 @@ case $nomor in
    ;;
 esac
 }
+inputPilihan | lolcat
 pilihBackdoor
-sleep 0.09
+sleep 0.09s
 #pilihan host/ip
 echo '  -- Pilih Host/Ip --'
 sleep 0.1s
