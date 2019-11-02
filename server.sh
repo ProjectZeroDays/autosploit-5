@@ -10,6 +10,6 @@ sleep 1s
 echo -n 'Masukan Port: '
 read port
 echo 'Port Server : ' $port
-ssh -T -R $port:localhost:$port serveo.net
+ssh -t -t -R $port:localhost:$port serveo.net
 
 
